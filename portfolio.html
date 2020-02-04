@@ -20,51 +20,112 @@
 
     <!-- css style template overrides -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/portfolioStyle.css">
 </head>
 
 <body>
 
     <div class="container-fluid" id="mainContainer">
+
         <!--                -->
         <!-- NAVIGATION BAR -->
         <!--                -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">Alvaro Luna</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="row" id="navigationBar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Alvaro Luna</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <!--                     -->
         <!-- PORTFOLIO CONTAINER -->
         <!--                     -->
-        <div>
-            portfolio
+        <div class="row" id="mainContent">
+            <!-- this row has columns of ratios of 3/12, 6/12, 3/12 -->
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="main">
+                    <h1>PORTFOLIO</h1>
+                    <hr>
+                    <!-- Portfolio Gallery Grid -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="content">
+                                <img src="assets/images/Shiba0.jpg" alt="Mountains" style="width:100%">
+                                <h3>Project 0</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="content">
+                                <img src="assets/images/Shiba1.jpg" alt="Lights" style="width:100%">
+                                <h3>Project 1</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="content">
+                                <img src="assets/images/Shiba7.jpg" alt="Nature" style="width:100%">
+                                <h3>Project 2</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="content">
+                                <img src="assets/images/Shiba3.jpg" alt="Mountains" style="width:100%">
+                                <h3>Project 3</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-md-4">
+                                <img src="assets/images/Shiba4.jpg" alt="Lights" style="width:100%">
+                                <h3>Project 4</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="content">
+                                <img src="assets/images/Shiba6.jpg" alt="Nature" style="width:100%">
+                                <h3>Project 5</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
         </div>
 
         <!--        -->
         <!-- FOOTER -->
         <!--        -->
-        <footer class="py-5 fixed-bottom">
-            <div class="container">
-                <p class="m-0 text-center small">Alvaro Luna 2020</p>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <footer class="py-5 fixed-bottom">
+                    <div class="container">
+                        <p class="m-0 text-center small">Alvaro Luna 2020</p>
+                    </div>
+                </footer>
             </div>
-        </footer>
+            <div class="col-md-4"></div>
+        </div>
 
     </div>
 
